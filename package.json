@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "json-server --watch db.json --port 5000",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,9 +16,12 @@
     "antd": "^5.8.5",
     "axios": "^1.5.0",
     "graphql": "^16.8.0",
+    "json": "^11.0.0",
+    "json-server": "^0.17.3",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "server": "^1.0.38"
   },
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0",
