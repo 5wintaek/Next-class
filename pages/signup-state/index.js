@@ -24,10 +24,12 @@ export default function SignUpState() {
   };
 
   return (
-    <div>
-      이메일 : <input type="text" onChange={onChangeEmail} />
-      비밀번호 : <input type="password" onChange={onChangePassword} />
-      <button onClick={onClickSignup}>회원가입</button>
-    </div>
+    <>
+      <div>
+        Email : <input type="text" onChange={onChangeEmail} />
+        비밀번호 : <input type="password" onChange={onChangePassword} />
+        <button onClick={onClickSignup}>회원가입</button>
+      </div>
+    </>
   );
 }
