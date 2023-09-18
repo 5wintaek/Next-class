@@ -34,7 +34,7 @@ export default function GraphqlMutationPage() {
           createProductInput: {
             name: '마우스',
             detail: '메메',
-            price: 3000,
+            price: 300,
           },
         },
       });
