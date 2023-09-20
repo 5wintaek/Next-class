@@ -4,13 +4,13 @@ export default function StaticRoutingPage() {
   const router = useRouter();
 
   const onClickMove1 = () => {
-    router.push('/section5/05-4-dynamic-routing-board-query-moved/list1');
+    router.push('/section5/05-04-dynamic-routing-board-query-moved/list1');
   };
   const onClickMove2 = () => {
-    router.push('/section5/05-4-dynamic-routing-board-query-moved/list2');
+    router.push('/section5/05-04-dynamic-routing-board-query-moved/list2');
   };
   const onClickMove3 = () => {
-    router.push('/section5/05-4-dynamic-routing-board-query-moved/list3');
+    router.push('/section5/05-04-dynamic-routing-board-query-moved/list3');
   };
 
   return (

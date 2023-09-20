@@ -2,7 +2,7 @@ import { gql, useQuery } from '@apollo/client';
 import { useRouter } from 'next/router';
 
 const FETCH_BOARD = gql`
-  query fetchProduct($number: Int) {
+  query fetchBoard($number: Int) {
     fetchBoard(number: $number) {
       number
       writer
@@ -18,7 +18,7 @@ export default function StaticRoutingMovedPage() {
   console.log(router);
 
   const { data } = useQuery(FETCH_BOARD, {
-    variables: { number: Number(router.query.qqq) },
+    variables: { number: Number(router.query.number) },
   });
   // { } 부분은 항상 고정이다
   // useQuery 를 본 순간 바로 데이터를 요청한다
@@ -29,7 +29,7 @@ export default function StaticRoutingMovedPage() {
 
   return (
     <>
-      <div>{router.query.qqq}번 게시글로 이동이 완료되었습니다.</div>
+      <div>{router.query.number}번 게시글로 이동이 완료되었습니다.</div>
       <div>Writer : {data && data.fetchBoard?.writer}</div>
       <div>title : {data?.fetchBoard?.title}</div>
       <div>
