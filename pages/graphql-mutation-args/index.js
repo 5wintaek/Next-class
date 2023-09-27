@@ -50,7 +50,7 @@ export default function GraphqlMutationPage() {
 
   return (
     <div>
-      작성자 : <input type="text" onChange={onChangeWriter} />
+      작성자는 누굴까 : <input type="text" onChange={onChangeWriter} />
       제목 : <input type="text" onChange={onChangeTitle} />
       내용 : <input type="text" onChange={onChangeContents} />
       <button onClick={onClickSubmit}>GRAPHQL-API 요청하기</button>
